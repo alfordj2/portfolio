@@ -1,7 +1,72 @@
 body {
-  background-image:url("http://www.desktophdw.com/wallstock/purple-painting-watercolor-twitter-background-wallpaper-for-backgrounds-com.jpg");
+ background: #FFFFFF;
+ font-family: Georgia, Arial, Helvetica, sans-serif;
+ font-weight: 100;
+ font-size:1.000em;
+ color:#FFFFFF;
   
-  }
+}
+  
+  
+  p{
+	font-family:Georgia, Arial, Helvetica, sans-serif;
+	font-weight:100;
+	color:#333;
+}
+
+h1,h2,h3{
+	font-weight:100;
+	color:rgb(97, 94, 94);
+	 -webkit-font-smoothing: antialiased !important; /*no longer in spec*/
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+	-moz-text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+	-o-text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+	-webkit-text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
+h1{
+	font-size:3.00em;
+	font-family:Arial, Helvetica, sans-serif;
+	text-transform:uppercase;
+	margin:0;
+	padding:0;
+}
+
+h2{
+	font-size:2.50em;
+	font-family:Raleway, Arial, Helvetica, sans-serif;
+	margin:0;
+	padding:0;
+}
+
+h3{
+	font-size:1.5em;
+	font-family:Arial, Helvetica, sans-serif;
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 
 #topbar {
   background: #4f4a41;
