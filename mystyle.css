@@ -52,7 +52,37 @@ li {
   
   
   
-  
+.title{
+font-family:montserrat;      
+font-size:14px;
+line-height:20px;
+letter-spacing:2px;
+text-transform:uppercase;
+color:#000;
+}
+.title a{
+color:#000;
+}
+
+ 
+.sidebar1{
+position:absolute;
+top:200px;
+width:200px;
+left:50%;
+margin-left:-600px;
+z-index:999;
+text-align:center;
+}
+.sidebar2{
+position:absolute;
+top:200px;
+width:200px;
+right:50%;
+margin-right:-600px;
+z-index:999;
+text-align:center;
+}
   
   
   
