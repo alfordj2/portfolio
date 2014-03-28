@@ -123,33 +123,55 @@ display:inline;
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
 
-<script>
-$(document).ready(function() {
-	 $('.image-link').magnificPopup({type:'image'});
-}); 
-	$('.parent-container').magnificPopup({
-  delegate: 'a', // child items selector, by clicking on it popup will open
-  type: 'image'
-  // other options
-});
-	$('.popup-gallery').magnificPopup({
-		delegate: 'a',
-		type: 'image',
-		tLoading: 'Loading image #%curr%...',
-		mainClass: 'mfp-img-mobile',
-		gallery: {
-			enabled: true,
-			navigateByImgClick: true,
-			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-		},
-		image: {
-			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-			titleSrc: function(item) {
-				return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
-			}
-		}
-	});
-});
+<script type="text/javascript">
+(function() {
+
+    var isCanvasSupported = function () {
+      var elem = document.createElement('canvas');
+      return !!(elem.getContext && elem.getContext('2d'));
+    };
+
+    if( isCanvasSupported() ) {
+
+      var canvas = document.getElementById('broken-glass'),
+          context = canvas.getContext('2d'),
+          width = canvas.width = Math.min(800, window.innerWidth),
+          height = canvas.height,  
+          numTriangles = 100,
+          rand = function(min, max){
+            return Math.floor( (Math.random() * (max - min + 1) ) + min);
+          };
+          
+      window.drawTriangles = function(){
+        context.clearRect(0, 0, width, height);
+        var hue = rand(0,360);
+        var increment = 80 / numTriangles;
+        for(var i = 0; i < numTriangles; i++) { 
+            context.beginPath();      
+            context.moveTo(rand(0,width), rand(0,height) );  
+            context.lineTo(rand(0,width), rand(0,height) );
+            context.lineTo(rand(0,width), rand(0,height) );
+            context.globalAlpha = 0.5;
+            context.fillStyle = 'hsl('+Math.round(hue)+', '+rand(15,60)+'%, '+ rand(10, 60) +'%)';      
+            context.closePath();    
+            context.fill();
+
+            hue+=increment;
+            if(hue > 360) hue = 0;
+        }
+        canvas.style.cssText = '-webkit-filter: contrast(115%);';
+      };
+
+      document.getElementById('logo-title').style.color = 'rgba(250, 250, 250, 0.95)';
+      drawTriangles();
+
+      var el = document.getElementById('logo');
+      el.onclick = function() {
+        drawTriangles();
+      };
+    }
+
+  })();
   
         
   </script>                        
