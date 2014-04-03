@@ -17,6 +17,15 @@
 <!-- Latest compiled and minified CSS Bootstrap -->
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
+<!--JQuery things-->
+<link rel="stylesheet" href="magnific-popup/magnific-popup.css"> 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+<script src="magnific-popup/jquery.magnific-popup.js"></script> 
+
+
+<a class="test-popup-link" href="path-to-image.jpg">Open popup</a>
+
+
 <!--this is the border-->
 <style>
     
@@ -125,6 +134,16 @@ display:inline;
 
 <script type="text/javascript">
 $(document).ready(function() {
+	
+	
+	$('.test-popup-link').magnificPopup({ 
+  type: 'image'
+	// other options
+});
+	
+	
+  $('.image-link').magnificPopup({type:'image'});
+});
 
         $('.image-popup-vertical-fit').magnificPopup({
           type: 'image',
@@ -160,7 +179,49 @@ $(document).ready(function() {
         });
 
       });
+      
+      
+      
+      
+      
+      
+      
+      image: {
+  markup: '<div class="mfp-figure">'+
+            '<div class="mfp-close"></div>'+
+            '<div class="mfp-img"></div>'+
+            '<div class="mfp-bottom-bar">'+
+              '<div class="mfp-title"></div>'+
+              '<div class="mfp-counter"></div>'+
+            '</div>'+
+          '</div>', // Popup HTML markup. `.mfp-img` div will be replaced with img tag, `.mfp-close` by close button
+
+  cursor: 'mfp-zoom-out-cur', // Class that adds zoom cursor, will be added to body. Set to null to disable zoom out cursor. 
+  
+  titleSrc: 'title', // Attribute of the target element that contains caption for the slide.
+  // Or the function that should return the title. For example:
+  // titleSrc: function(item) {
+  //   return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
+  // }
+
+  verticalFit: true, // Fits image in area vertically
+
+  tError: '<a href="%url%">The image</a> could not be loaded.' // Error message
+}
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
     </script>
+    
+    
+    
     <style type="text/css">
     /* padding-bottom and top for image */
     .mfp-no-margins img.mfp-img {
