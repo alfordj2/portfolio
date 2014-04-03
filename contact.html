@@ -97,26 +97,24 @@ display:inline;
   <article class=".col-md-5 .col-md-offset-1">
   
   
-  <form action="mailto://alfordj2@tcnj.edu">
-     
-     
-     <label for="name"></label>
-      <input type="text" name="name" id="name" value="my name is..." />
-      <br />
+  <form action="mailto:alfordj2@tcnj.edu" method="post" enctype="text/plain"
+  <div class="form-group">
+      <label>Form</label>
+      <input class="form-control" type="text" name="from" placeholder="Enter email">
+      </div>
       
-    
-      <label for ="email"></label>
-      <imput type="text" name="email" id="email" value="letsbefriends@art.com"/>
-      <br />
-     
-    
-      <label for="message"></label>
-      <textarea name="message" id="message"></textarea>
-      <br /> <br />
+       <div class="form-group">
+      <label>Subject</label>
+      <input class="form-control" type="text" name="subject" placeholder="Enter subject">
+      </div>
       
-      <input type="submit" name="submit" value="Submit" />
+       <div class="form-group">
+      <label>Message</label>
+      <input class="form-control" name="message"> </textarea>
+      </div>
       
       
+      <input type="submit" class="btn btn-default" name="submit" value="Submit">
       
   </form>
   
