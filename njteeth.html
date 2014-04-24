@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+<!--fonts-->
+<link href='http://fonts.googleapis.com/css?family=Nixie+One' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Asap:400,700,700italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lato:900' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Molengo' rel='stylesheet' type='text/css'>
+
+
+<!--bootstrap begin-->
+<meta charset="utf-8"> <!--make sure this page is viewed as being international character set-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge"><!--for backwards compatability with older browsers-->
+<meta name="viewport" content="width=device-width, initial-scale=1"><!--targeting IOS devices-->
+
+<!-- Latest compiled and minified CSS Bootstrap -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+<!--this is the border-->
+<style>
+    
+    header {
+        background-color: #FFFFFF;
+    }
+    
+    nav {
+        background-color: #FFFFFF;
+    }
+    
+    article {
+        background-color: #FFFFFF;
+        margin: 10px;
+    }
+    
+    h2 {
+        font-family: 'Lato', sans-serif; font-weight: 500;
+    }
+    
+</style>
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+<!-- END bootstrap, also see JQuery at bottom of page-->
+
+
+<!--CSS-->
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+
+
+<title>Portfolio</title>
+
+<style>
+ul
+{
+list-style-type:none;
+margin:0;
+padding:0;
+}
+li 
+{
+display:inline;
+}
+</style>
+
+</head>
+<body>
+
+  
+  <div class="container">
+  <!--all content goes in here-->
+  <div class="row">
+      <header class="col-md-2">
+        <br><h1><a href="http://alfordj2.github.io/portfolio/"><img src="http://i57.tinypic.com/2woaura.png" alt="Identity" width="170" height="170"></h1>
+      
+          
+      </header>
+      
+  </div>
+  <div class="row">
+  <nav>
+     <nav class="col-md-2">
+     <br><br><br>
+         <center><h1><a href="bio.html" title="bio">Bio</a></h1></center>
+         <center><h1><a href="contact.html" title="contact">Contact</a></h1></center>
+         <center><h1><a href="SushiMenu.html" title="sushimenu">Sushi Menu</a></h1></center>
+         <center><h1><a href="njteeth.html" title="NJteeth">NJ Teeth</a></h1></center>
+         <center><h1><a href="bwgmenu.html" title="BlueWaterGrillmenu">Blue Water Grill Menu Resdesign</a></h1></center>
+         <center><h1><a href="lionposter.html" title="lionzooposter">Lion Zoo Poster</a></h1></center>
+         <center><h1><a href="desphotos.html" title="dessertphotography">Dessert Photography</a></h1></center>
+         
+     </nav> 
+  
+  <article class=".col-md-5 .col-md-offset-1">
+  
+ <h3>New Jersey Teeth</h3><br><br>
+ <h1>This is a work in progress; I've begun to construct a composition of a collection of K-9s that are surrounding the state of New Jersey.</h1>
+ 
+
+
+  </div>
+  
+  <center>
+
+<a href="http://tinypic.com?ref=2cgzif8" target="_blank"><img src="http://i60.tinypic.com/2cgzif8.png" border="0" alt="Image and video hosting by TinyPic"></a>
+
+      <br><br><br><br><br>
+  </center>
+ <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!--Latest compiled and minified JavaScript -->
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+
+        $('.image-popup-vertical-fit').magnificPopup({
+          type: 'image',
+          closeOnContentClick: true,
+          mainClass: 'mfp-img-mobile',
+          image: {
+            verticalFit: true
+          }
+          
+        });
+
+        $('.image-popup-fit-width').magnificPopup({
+          type: 'image',
+          closeOnContentClick: true,
+          image: {
+            verticalFit: false
+          }
+        });
+
+        $('.image-popup-no-margins').magnificPopup({
+          type: 'image',
+          closeOnContentClick: true,
+          closeBtnInside: false,
+          fixedContentPos: true,
+          mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+          image: {
+            verticalFit: true
+          },
+          zoom: {
+            enabled: true,
+            duration: 300 // don't foget to change the duration also in CSS
+          }
+        });
+
+      });
+    </script>
+    <style type="text/css">
+    /* padding-bottom and top for image */
+    .mfp-no-margins img.mfp-img {
+      padding: 0;
+    }
+    /* position of shadow behind the image */
+    .mfp-no-margins .mfp-figure:after {
+      top: 0;
+      bottom: 0;
+    }
+    /* padding for main container */
+    .mfp-no-margins .mfp-container {
+      padding: 0;
+    }
+
+
+   
+   
+    
+    .mfp-with-zoom .mfp-container,
+    .mfp-with-zoom.mfp-bg {
+      opacity: 0;
+      -webkit-backface-visibility: hidden;
+      -webkit-transition: all 0.3s ease-out; 
+      -moz-transition: all 0.3s ease-out; 
+      -o-transition: all 0.3s ease-out; 
+      transition: all 0.3s ease-out;
+    }
+    
+    .mfp-with-zoom.mfp-ready .mfp-container {
+        opacity: 1;
+    }
+    .mfp-with-zoom.mfp-ready.mfp-bg {
+        opacity: 0.8;
+    }
+    
+    .mfp-with-zoom.mfp-removing .mfp-container, 
+    .mfp-with-zoom.mfp-removing.mfp-bg {
+      opacity: 0;
+    }
+    
+    </style>
+        
+  </script>                        
+</body>
+
+</html>
